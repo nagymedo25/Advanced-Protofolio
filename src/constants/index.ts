@@ -7,30 +7,25 @@ import type {
 } from "../types";
 
 import {
-  logo,
-  me,
-  github,
-  menu,
-  close,
-  css,
-  figma,
-  git,
-  html,
+  mobile,
+  backend,
+  creator,
+  web,
   javascript,
+  typescript,
+  html,
+  css,
   reactjs,
   redux,
   tailwind,
-  typescript,
-  meta,
+  git,
+  figma,
   SpotShot,
-  Goalmaster,
-  web,
-  backend,
-  mobile,
-  creator,
   proshot,
+  Goalmaster,
   WE,
   SPot,
+  github,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -222,3 +217,26 @@ export const socialLinks = {
   whatsapp: "https://wa.me/201091506554",
   github: "https://github.com/nagymedo25",
 };
+
+export const contacts = [
+  {
+    title: "Email",
+    subtitle: "nagymedo25@gmail.com",
+    icon: creator,
+  },
+  {
+    title: "GitHub",
+    subtitle: "github.com/nagymedo25",
+    icon: github,
+  },
+  {
+    title: "Facebook",
+    subtitle: "facebook.com/profile.php?id=100076148280040",
+    icon: web,
+  },
+  {
+    title: "WhatsApp",
+    subtitle: "wa.me/201091506554",
+    icon: mobile,
+  },
+];

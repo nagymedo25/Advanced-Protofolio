@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { styles } from "../../constants/styles";
 
 const Footer = () => {
@@ -16,7 +15,7 @@ const Footer = () => {
           <div className="flex flex-col items-center sm:items-end">
             <div className="flex gap-4">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=100076148280040"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-secondary hover:text-white transition-colors duration-300"
@@ -26,7 +25,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://wa.me/your-number"
+                href="https://wa.me/201091506554"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-secondary hover:text-white transition-colors duration-300"
@@ -36,7 +35,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/nagymedo25"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-secondary hover:text-white transition-colors duration-300"

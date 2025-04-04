@@ -5,14 +5,7 @@ import { fadeIn, textVariant } from "../../utils/motion";
 import Tilt from "react-parallax-tilt";
 import { github } from "../../assets";
 
-const ProjectCard = ({
-  index,
-  name,
-  description,
-  tags,
-  image,
-  source_code_link,
-}: {
+interface ProjectCardProps {
   index: number;
   name: string;
   description: string;
@@ -21,16 +14,24 @@ const ProjectCard = ({
     color: string;
   }[];
   image: string;
-  source_code_link: string;
+  sourceCodeLink: string;
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  index,
+  name,
+  description,
+  tags,
+  image,
+  sourceCodeLink,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
+        tiltMaxAngleX={45}
+        tiltMaxAngleY={45}
+        scale={1.1}
+        transitionSpeed={450}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
         <div className="relative w-full h-[230px]">
@@ -42,7 +43,7 @@ const ProjectCard = ({
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={() => window.open(sourceCodeLink, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img

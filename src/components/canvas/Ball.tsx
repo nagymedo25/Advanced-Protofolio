@@ -7,7 +7,6 @@ import {
   Preload,
   useTexture,
 } from "@react-three/drei";
-import { motion } from "framer-motion";
 
 import CanvasLoader from "../layout/Loader";
 
@@ -24,14 +23,13 @@ const Ball = ({ icon }: { icon: string }) => {
           color="#fff8eb"
           polygonOffset
           polygonOffsetFactor={-5}
-          flatShading
+          map={decal}
         />
         <Decal
           position={[0, 0, 1]}
           rotation={[2 * Math.PI, 0, 6.25]}
           scale={1}
           map={decal}
-          flatShading
         />
       </mesh>
     </Float>

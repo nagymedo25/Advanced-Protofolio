@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { styles } from "../../constants/styles";
 import { navLinks } from "../../constants";
 import { logo, menu, close } from "../../assets";
-import { config } from "../../constants/config";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -35,7 +34,7 @@ const Navbar = () => {
           current.getBoundingClientRect().top - sectionHeight * 0.2;
 
         if (sectionTop < 0 && sectionTop + sectionHeight > 0) {
-          setActive(sectionId);
+          setActive(sectionId || "");
         }
       });
     };
