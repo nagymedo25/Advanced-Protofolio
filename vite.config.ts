@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/Advanced-Protofolio/",
+  base: "/MahmoudPro/",
   build: {
     outDir: "dist",
     assetsDir: "assets",
@@ -13,7 +13,9 @@ export default defineConfig({
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom'],
-          three: ['three', '@react-three/fiber', '@react-three/drei']
+          three: ['three', '@react-three/fiber', '@react-three/drei'],
+          framer: ['framer-motion'],
+          emailjs: ['@emailjs/browser']
         }
       }
     }
