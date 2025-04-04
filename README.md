@@ -54,7 +54,6 @@ reactjs18-3d-portfolio/
 ├   ├   ├   ├── About.tsx
 ├   ├   ├   ├── Contact.tsx
 ├   ├   ├   ├── Experience.tsx
-├   ├   ├   ├── Feedbacks.tsx
 ├   ├   ├   ├── Hero.tsx
 ├   ├   ├   ├── Tech.tsx
 ├   ├   ├   ├── Works.tsx
