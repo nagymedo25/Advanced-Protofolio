@@ -16,7 +16,10 @@ export default defineConfig({
           three: ['three', '@react-three/fiber', '@react-three/drei'],
           framer: ['framer-motion'],
           emailjs: ['@emailjs/browser']
-        }
+        },
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash].[ext]'
       }
     }
   },
