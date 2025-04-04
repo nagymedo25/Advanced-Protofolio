@@ -3,7 +3,6 @@ import { styles } from "../../styles";
 import { SectionWrapper } from "../../hoc";
 import { fadeIn, textVariant } from "../../utils/motion";
 import { contacts } from "../../constants";
-import { send, github, linkedin, twitter } from "../../assets";
 import { useState } from "react";
 
 const Contact = () => {
@@ -131,4 +130,4 @@ const Contact = () => {
   );
 };
 
-export default SectionWrapper(Contact, "contact");
+export default SectionWrapper(Contact, "contact"); 
